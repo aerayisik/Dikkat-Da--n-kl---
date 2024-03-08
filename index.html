@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çalışma Dikkati</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Çalışma Dikkati</h1>
+        <h1 class="baslik"> Çalışmaya Başladığınızdan İtibaren <span id="distractionCount">0</span> Telefonunuz Dikkatini Dağıttı! </header>
+    </header>
+    <section>
+        <div class="focus-body">
+            <h2>Aşağıdaki müzikleri odağınızı kolaylaştırmak amacıyla çalışırken dinleyebilirsiniz.
+            </h2>
+            <button id="distractionButton" onclick="increaseDistractionCount()">Telefonla Dikkatinizi Dağıtmayın</button>
+            <div class="icon-button">
+            <button id="toggleRain" onclick="toggleMusic('rainAudio', 'toggleRain', 'bi-pause', 'bi-play')">
+                <i class="bi bi-hypnotize"></i> 
+            </button>
+            <button id="toggleMyAudio" onclick="toggleMusic('myAudio', 'toggleMyAudio', 'bi-pause', 'bi-play')">
+                <i class="bi bi-cup"></i>
+            </button>
+            <button id="togglePiano" onclick="toggleMusic('pianoAudio', 'togglePiano', 'bi-pause', 'bi-play')">
+                <i class="bi bi-moon"></i>
+            </button>
+            </div>
+        </div>
+        <div class="music-controls">
+                <input type="range" min="0" max="10" step="1" value="7" id="volume-input" onchange="adjustVolume()">
+                <label for="volume-input">Ses Ayarı</label>
+            </div>
+<audio id="myAudio" src="audio/guitar.mp3"></audio>
+<audio id="pianoAudio" src="audio/piano.mp3"></audio>
+<audio id="rainAudio" src="audio/rain.mp3"></audio>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(bg.png);
+    color: white;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-weight: bold;
+}
+
+
+header,
+.baslik {
+    margin-top: 30px;
+    text-align: center;
+}
+#distractionCount{
+    font-weight: 800;
+    font-size:34px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+}
+section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.focus-body {
+    text-align: center;
+}
+.focus-body h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.focus-body button {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.icon-button {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.music-controls {
+    margin-top: 20px;
+    color:rgb(22, 22, 22);
+    font-weight: bold;
+    text-align: center;
+}
+           input[type="range"] {
+               -webkit-appearance: none;
+               appearance: none;
+               width: 50%;
+               cursor: pointer;
+               outline: none;
+               overflow: hidden;
+               border-radius: 16px;
+           }
+           input[type="range"]::-webkit-slider-runnable-track {
+               height: 15px;
+               background: #ccc;
+               border-radius: 16px;
+           }
+           input[type="range"]::-moz-range-track {
+               height: 15px;
+               background: #ccc;
+               border-radius: 16px;
+           }
+           input[type="range"]::-webkit-slider-thumb {
+               -webkit-appearance: none;
+               appearance: none;
+               height: 15px;
+               width: 15px;
+               background-color: #fff;
+               border-radius: 50%;
+               border: 2px solid #bb71bb;
+               box-shadow: -407px 0 0 400px #bb71bb;
+           }
